@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Project</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-development/uploads/files/000/000/001/original/logo.png?1627901693"
+        alt="SheCodes"
+        width="150"
+      />
+    </header>
+
+    <form id="search-form">
+      <input
+        type="text"
+        id="city-input"
+        name="city"
+        placeholder="Enter city"
+        required
+      />
+
+      <button type="submit">Search</button>
+    </form>
+
+    <section>
+      <h2 id="city-name">Nairobi</h2>
+
+      <p id="current-date-time"></p>
+
+      <p id="weather-icon">⛅</p>
+
+      <p>
+        Temperature:
+        <span id="temperature">26</span>°C
+      </p>
+
+      <p>
+        Weather:
+        <span id="description">Partly Cloudy</span>
+      </p>
+
+      <p>
+        Humidity:
+        <span id="humidity">55</span>%
+      </p>
+
+      <p>
+        Wind:
+        <span id="wind-speed">12</span> km/h
+      </p>
+    </section>
+
+    <section>
+      <h3>Forecast</h3>
+
+      <div style="display: inline-block; text-align: center; padding: 5px">
+        ☀️
+        <p>12:00</p>
+        <p>28°C</p>
+        <p>Sunny</p>
+      </div>
+
+      <div style="display: inline-block; text-align: center; padding: 5px">
+        ☀️
+        <p>14:00</p>
+        <p>29°C</p>
+        <p>Sunny</p>
+      </div>
+
+      <div style="display: inline-block; text-align: center; padding: 5px">
+        ⛅
+        <p>16:00</p>
+        <p>27°C</p>
+        <p>Cloudy</p>
+      </div>
+
+      <div style="display: inline-block; text-align: center; padding: 5px">
+        ⛅
+        <p>18:00</p>
+        <p>25°C</p>
+        <p>Cloudy</p>
+      </div>
+    </section>
+
+    <footer>
+      Coded by
+      <a
+        href="https://www.shecodes.io/graduates/182935-jane-ndung-u"
+        target="_blank"
+      >
+        Jane Ndungu
+      </a>
+
+      | Open-sourced on
+
+      <a
+        href="https://github.com/NdunguJane/desktop-tutorial/issues/1"
+        target="_blank"
+      >
+        GitHub
+      </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
